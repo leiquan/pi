@@ -29,4 +29,4 @@ pwm_l = GPIO.PWM(PWM_L, 50)
 pwm_r = GPIO.PWM(PWM_R, 50)
 
 pwm_l.start(50)
-pwm_r.start(50) 
+pwm_r.start(50)

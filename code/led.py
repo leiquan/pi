@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+"""
+可以正常运行的代码
+"""
+
 import RPi.GPIO as GPIO
 import time
 

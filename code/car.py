@@ -29,7 +29,8 @@ RPi.GPIO.setup(26, RPi.GPIO.OUT)
 
 #设置4个固定的1
 RPi.GPIO.output(6, True)
-RPi.GPIO.output(13, True)
+RPi.GPIO.output(13, False)
+
 RPi.GPIO.output(19, True)
 RPi.GPIO.output(26, True)
 

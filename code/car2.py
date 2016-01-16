@@ -6,7 +6,7 @@ import time
 
 
 # 清理GPIO口
-RPi.GPIO.cleanup()
+#RPi.GPIO.cleanup()
 
 
 RPi.GPIO.setmode(RPi.GPIO.BCM)

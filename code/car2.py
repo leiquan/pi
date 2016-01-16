@@ -4,6 +4,11 @@
 import RPi.GPIO
 import time
 
+
+# 清理GPIO口
+RPi.GPIO.cleanup()
+
+
 RPi.GPIO.setmode(RPi.GPIO.BCM)
 
 # 两个电机的开和关
@@ -22,13 +27,8 @@ RPi.GPIO.setup(15, RPi.GPIO.OUT)
 RPi.GPIO.setup(19, RPi.GPIO.OUT)
 RPi.GPIO.setup(26, RPi.GPIO.OUT)
 
-try:
-    # 第一个点击正转
-    RPi.GPIO.output(14, True)
-    RPi.GPIO.output(6, False)
-    RPi.GPIO.output(13, True)
 
-except KeyboardInterrupt:
-    pass
-    # 清理GPIO口
-    RPi.GPIO.cleanup()
+# 第一个点击正转
+RPi.GPIO.output(14, True)
+RPi.GPIO.output(6, False)
+RPi.GPIO.output(13, True)

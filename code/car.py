@@ -14,18 +14,24 @@ RPi.GPIO.setup(6, RPi.GPIO.OUT)
 RPi.GPIO.setup(13, RPi.GPIO.OUT)
 RPi.GPIO.setup(19, RPi.GPIO.OUT)
 RPi.GPIO.setup(26, RPi.GPIO.OUT)
-while True:
-    RPi.GPIO.output(6, True)
+# while True:
+#     RPi.GPIO.output(6, True)
+#     RPi.GPIO.output(13, True)
+#     RPi.GPIO.output(19, True)
+#     RPi.GPIO.output(26, True)
+#
+#     time.sleep(2)
+#     RPi.GPIO.output(6, False)
+#     RPi.GPIO.output(13, False)
+#     RPi.GPIO.output(19, False)
+#     RPi.GPIO.output(26, False)
+#     time.sleep(2)
+
+#设置4个固定的1
+RPi.GPIO.output(6, True)
     RPi.GPIO.output(13, True)
     RPi.GPIO.output(19, True)
     RPi.GPIO.output(26, True)
-
-    time.sleep(2)
-    RPi.GPIO.output(6, False)
-    RPi.GPIO.output(13, False)
-    RPi.GPIO.output(19, False)
-    RPi.GPIO.output(26, False)
-    time.sleep(2)
 
 
 # 呼吸灯的效果

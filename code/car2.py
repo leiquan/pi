@@ -30,6 +30,5 @@ try:
 
 except KeyboardInterrupt:
     pass
-
-# 清理GPIO口
-RPi.GPIO.cleanup()
+    # 清理GPIO口
+    RPi.GPIO.cleanup()

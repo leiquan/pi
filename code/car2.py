@@ -8,8 +8,6 @@ import time
 # 清理GPIO口
 #RPi.GPIO.cleanup()
 
-
-RPi.GPIO.reset();
 RPi.GPIO.setmode(RPi.GPIO.BCM)
 
 # 两个电机的开和关
@@ -32,3 +30,6 @@ RPi.GPIO.setup(26, RPi.GPIO.OUT)
 RPi.GPIO.output(14, True)
 RPi.GPIO.output(6, False)
 RPi.GPIO.output(13, True)
+
+
+RPi.GPIO.cleanup()

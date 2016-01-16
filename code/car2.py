@@ -31,5 +31,9 @@ RPi.GPIO.output(14, True)
 RPi.GPIO.output(6, False)
 RPi.GPIO.output(13, True)
 
+RPi.GPIO.output(14, True)
+RPi.GPIO.output(6, True)
+RPi.GPIO.output(13, False)
+
 
 RPi.GPIO.cleanup()
